@@ -8,4 +8,4 @@ app.include_router(TaskRouter, tags=["Tasks"], prefix="/task")
 
 @app.get("/", tags=["Root"])
 async def read_root():
-    return {"message": "Async To-Do List"}
+    return f'Don\'t Forget! API v1'
